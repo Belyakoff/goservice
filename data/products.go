@@ -32,7 +32,7 @@ func GetProducts() Products {
 }
 
 func AddProduct(p Product){
-	fmt.Printf("v%",p)
+	//fmt.Printf("v%",p)
 	maxID := productList[len(productList)-1].ID
 	p.ID = maxID + 1
 	productList = append(productList, &p)
